@@ -15,4 +15,4 @@ venv.bak/
 # project specific
 data
 hf_ckpt
-output/
+output
