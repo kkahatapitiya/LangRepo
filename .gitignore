@@ -13,6 +13,6 @@ env.bak/
 venv.bak/
 
 # project specific
-data/
-hf_ckpt/
+data
+hf_ckpt
 output/
