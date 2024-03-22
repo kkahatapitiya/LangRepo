@@ -23,7 +23,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 **Download pre-extracted captions.**
 
-Download pre-extrated captions provided in LLoVi github repo, using [this drive](https://drive.google.com/file/d/13M10CB5ePPVlycn754_ff3CwnpPtDfJA/view?usp=drive_link). Please refer to the same for the details about how captions are extracted. Unzip the captions to ```./data```.
+Download pre-extrated captions provided in LLoVi github repo, using [this drive](https://drive.google.com/file/d/13M10CB5ePPVlycn754_ff3CwnpPtDfJA/view?usp=drive_link). Please refer to the same for the details about how captions are extracted. Unzip the captions in ```./data```.
 
 **Download models.**
 
@@ -215,7 +215,6 @@ If you find this useful, please consider citing our work:
       title={Language Repository for Long Video Understanding}, 
       author={Kahatapitiya, Kumara and Ranasinghe, Kanchana and Park, Jongwoo and Ryoo, Michael S},
       year={2024},
-      eprint={2403.14622},
       eprint={2403.14622},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
