@@ -38,7 +38,6 @@ Download [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-
 ## EgoSchema
 
 **Create repository.**
-**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -60,7 +59,6 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
-**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -75,7 +73,6 @@ python main_ll_eval.py \
 
 ## NExT-QA
 
-**Create repository.**
 **Create repository.**
 
 ```bash
@@ -101,7 +98,6 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
-**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -118,7 +114,6 @@ python main_ll_eval.py \
 
 ## IntentQA
 
-**Create repository.**
 **Create repository.**
 
 ```bash
@@ -144,7 +139,6 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
-**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -161,7 +155,6 @@ python main_ll_eval.py \
 
 ## NExT-GQA
 
-**Create repository.**
 **Create repository.**
 
 ```bash
@@ -187,7 +180,6 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
-**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -202,7 +194,6 @@ python main_ll_eval.py \
 --prompt_type qa_ll_mistral_nextqa
 ```
 
-**Ground answers in time.**
 **Ground answers in time.**
 
 ```bash
