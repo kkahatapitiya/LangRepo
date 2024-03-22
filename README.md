@@ -2,6 +2,12 @@
 
 This is a [WIP] implementation for the paper, [Language Repository for Long Video Understanding](https://arxiv.org/abs/2403.14622).
 
+## **Introduction**
+
+<img src="./assets/overview.png" width="1000">
+
+Language has become a prominent modality in computer vision with the rise of multi-modal LLMs. Despite supporting long context-lengths, their effectiveness in handling long-term information gradually declines with input length. This becomes critical, especially in applications such as long-form video understanding. In this paper, we introduce a Language Repository (LangRepo) for LLMs, that maintains concise and structured information as an interpretable (i.e., all-textual) representation. Our repository is associated with its read and write operations. The write operation (write-to-repo) prunes redundant text, creating concise descriptions that keep the context-utilization of LLMs in-check. It happens in two stages: by (1) grouping most similar captions based on embedding (eg: CLIP) similarities between two subsets, and (2) rephrasing grouped captions with an LLM-call. The iterative application of write operation with increasingly-longer chunks enables us to learn high-level semantics (eg: long temporal dependencies). The read operation (read-from-repo) extracts such stored language descriptions and any optional metadata within the repository entries (eg: timestamps, #occurances), by summarizing in multiple temporal scales, which is also an LLM-call. Altogether, our proposed framework is applied in zero-shot to long-term video reasoning tasks including visual question-answering (VQA) on EgoSchema, NExT-QA and IntentQA, and visually-grounded VQA on NExT-GQA, showing strong performance at its scale.
+
 ## **Installation**
 
 **Set up environment.**
@@ -32,6 +38,7 @@ Download [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-
 ## EgoSchema
 
 **Create repository.**
+**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -53,6 +60,7 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -67,6 +75,7 @@ python main_ll_eval.py \
 
 ## NExT-QA
 
+**Create repository.**
 **Create repository.**
 
 ```bash
@@ -92,6 +101,7 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -108,6 +118,7 @@ python main_ll_eval.py \
 
 ## IntentQA
 
+**Create repository.**
 **Create repository.**
 
 ```bash
@@ -133,6 +144,7 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -149,6 +161,7 @@ python main_ll_eval.py \
 
 ## NExT-GQA
 
+**Create repository.**
 **Create repository.**
 
 ```bash
@@ -174,6 +187,7 @@ python main_repo.py \
 ```
 
 **Answer multiple-choice questions.**
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -188,6 +202,7 @@ python main_ll_eval.py \
 --prompt_type qa_ll_mistral_nextqa
 ```
 
+**Ground answers in time.**
 **Ground answers in time.**
 
 ```bash
@@ -215,6 +230,7 @@ If you find this useful, please consider citing our work:
       title={Language Repository for Long Video Understanding}, 
       author={Kahatapitiya, Kumara and Ranasinghe, Kanchana and Park, Jongwoo and Ryoo, Michael S},
       year={2024},
+      eprint={2403.14622},
       eprint={2403.14622},
       archivePrefix={arXiv},
       primaryClass={cs.CV}

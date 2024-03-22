@@ -76,10 +76,10 @@ def parse_args():
     parser.add_argument("--start_from_scratch", action='store_true')
     parser.add_argument("--save_info", action='store_true')
     parser.add_argument("--save_every", default=5, type=int)
-    
     parser.add_argument("--debug", action='store_true')
+    
+    # repository
     parser.add_argument("--text_encoder", default="clip", type=str)         # clip, sentence-t5
-
     parser.add_argument("--num_iterations", default=1, type=int)            # 1, 2
     parser.add_argument('--num_chunks',  default="[4]", type=json.loads)    # [4], [2]
     parser.add_argument("--merge_ratio", default=0.25, type=float)          # 0.25, 0.5
@@ -91,22 +91,4 @@ def parse_args():
 
 
     return parser.parse_args()
-
-
-'''def build_fewshot_examples(qa_path, data_path):
-    if len(qa_path) == 0 or len(data_path) == 0:
-        return None
-    qa = load_json(qa_path)
-    data = load_json(data_path)  # uid --> str or list 
-    examplars = []
-    int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E'}
-    for i, (uid, examplar) in enumerate(qa.items()):
-        description = data[uid]
-        if isinstance(description, list):
-            description = '. '.join(description)
-        examplars.append(f"Examplar {i}.\n Descriptions: {description}.\n Question: {examplar['question']}\n A: {examplar['0']}\n B: {examplar['1']}\n C: {examplar['2']}\n D: {examplar['3']}\n E: {examplar['4']}\n Answer: {int_to_letter[examplar['truth']]}.")
-    examplars = '\n\n'.join(examplars)
-    return examplars'''
-    
-    
     
