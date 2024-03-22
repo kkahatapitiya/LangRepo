@@ -1,6 +1,6 @@
 # Language Repository
 
-This is a [WIP] implementation for the paper, [Language Repository for Long Video Understanding](https://arxiv.org/abs/2403.14622).
+This is the official implementation for the paper, [Language Repository for Long Video Understanding](https://arxiv.org/abs/2403.14622).
 
 ## **Introduction**
 
@@ -15,16 +15,10 @@ Language has become a prominent modality in computer vision with the rise of mul
 ```bash
 git clone https://github.com/kkahatapitiya/LangRepo.git
 cd LangRepo
-
 conda create -n langrepo python=3.10 -y
 conda activate langrepo
-
-pip install openai
+pip install openai pandas transformers accelerate sentence-transformers
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install pandas
-pip install transformers
-pip install accelerate
-pip install sentence-transformers
 ```
 
 **Download pre-extracted captions.**
