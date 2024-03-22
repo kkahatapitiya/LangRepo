@@ -1,6 +1,6 @@
-# Language Repository (LangRepo)
+# Language Repository
 
-This is official implementation for paper: [Language Repository for Long Video Understanding]().
+This is a [WIP] implementation for the paper, [Language Repository for Long Video Understanding](https://arxiv.org/abs/2403.14622).
 
 ## **Installation**
 
@@ -31,7 +31,7 @@ Download [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-
 
 ## EgoSchema
 
-### Create repo
+**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -52,7 +52,7 @@ python main_repo.py \
 --read_scales [-1]
 ```
 
-### Log-likelihood eval
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -67,7 +67,7 @@ python main_ll_eval.py \
 
 ## NExT-QA
 
-### Create repo
+**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -91,7 +91,7 @@ python main_repo.py \
 --read_scales [-2,-1]
 ```
 
-### Log-likelihood eval
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -108,7 +108,7 @@ python main_ll_eval.py \
 
 ## IntentQA
 
-### Create repo
+**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -132,7 +132,7 @@ python main_repo.py \
 --read_scales [-1]
 ```
 
-### Log-likelihood eval
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -149,7 +149,7 @@ python main_ll_eval.py \
 
 ## NExT-GQA
 
-### Create repo
+**Create repository.**
 
 ```bash
 python main_repo.py \
@@ -173,7 +173,7 @@ python main_repo.py \
 --read_scales [-3,-2,-1]
 ```
 
-### Log-likelihood eval
+**Answer multiple-choice questions.**
 
 ```bash
 python main_ll_eval.py \
@@ -188,7 +188,7 @@ python main_ll_eval.py \
 --prompt_type qa_ll_mistral_nextqa
 ```
 
-### Grounding
+**Ground answers in time.**
 
 ```bash
 python main.py \
@@ -215,6 +215,7 @@ If you find this useful, please consider citing our work:
       title={Language Repository for Long Video Understanding}, 
       author={Kahatapitiya, Kumara and Ranasinghe, Kanchana and Park, Jongwoo and Ryoo, Michael S},
       year={2024},
+      eprint={2403.14622},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
