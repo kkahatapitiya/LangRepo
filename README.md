@@ -49,7 +49,7 @@ python main_repo.py \
 --dst_stride 4 \
 --num_words_in_rephrase 20 \
 --num_words_in_sum 500 \
---read_scales [-1]
+--read_scales [-4,-3,-2,-1]
 ```
 
 **Answer multiple-choice questions.**
